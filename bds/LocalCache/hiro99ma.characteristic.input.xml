@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Characteristic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/characteristic.xsd"
+  type="hiro99ma.characteristic.input"
+  uuid="fbc6"
+  name="input">
+  <InformativeText>
+    <Abstract />
+    <Summary />
+    <Examples>
+      <Example />
+    </Examples>
+  </InformativeText>
+  <Value>
+    <Field
+      name="value">
+      <InformativeText>値を入れよう</InformativeText>
+      <Requirement>Optional</Requirement>
+      <Format>sint8</Format>
+      <Maximum>100</Maximum>
+      <Minimum>-100</Minimum>
+      <Unit>org.bluetooth.unit.unitless</Unit>
+    </Field>
+  </Value>
+</Characteristic>

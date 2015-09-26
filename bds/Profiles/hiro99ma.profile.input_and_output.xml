@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/profile.xsd"
+  name="Input and Output"
+  type="hiro99ma.profile.input_and_output"
+  uuid="70f20e16-6541-4321-936c-1addd7a8ccd7">
+  <InformativeText>
+    <Abstract>InputとOutputをするI/Oサービスを提供するプロファイル</Abstract>
+    <Summary>基本的な動作確認用。</Summary>
+    <Examples />
+  </InformativeText>
+  <Role
+    name="New Profile Server">
+    <Service
+      type="hiro99ma.service.ios">
+      <Declaration>Primary</Declaration>
+      <Requirement>Mandatory</Requirement>
+      <Characteristic
+        type="hiro99ma.characteristic.input">
+        <Requirement>Mandatory</Requirement>
+      </Characteristic>
+      <Characteristic
+        type="hiro99ma.characteristic.output">
+        <Requirement>Mandatory</Requirement>
+      </Characteristic>
+    </Service>
+  </Role>
+  <Role
+    name="New Profile Client" />
+</Profile>

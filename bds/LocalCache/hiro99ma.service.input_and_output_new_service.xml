@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/service.xsd"
+  type="hiro99ma.service.ble_ios"
+  uuid="70f2f866-6541-4321-936c-1addd7a8ccd7"
+  name="ble_ios">
+  <InformativeText>
+    <Abstract>Input
+- 値を書ける
+
+output
+- 値を読める
+- 値の変化を通知する</Abstract>
+    <InformativeDisclaimer />
+    <Summary>InputとOutputをするだけのServerサービス</Summary>
+    <Examples>
+      <Example />
+    </Examples>
+  </InformativeText>
+  <Transports>
+    <Classic>false</Classic>
+  </Transports>
+  <Characteristics>
+    <Characteristic
+      type="hiro99ma.characteristic.input"
+      name="input">
+      <Requirement>Mandatory</Requirement>
+      <Properties>
+        <Read>Excluded</Read>
+        <Write>Excluded</Write>
+        <WriteWithoutResponse>Mandatory</WriteWithoutResponse>
+        <SignedWrite>Excluded</SignedWrite>
+        <ReliableWrite>Excluded</ReliableWrite>
+        <Notify>Excluded</Notify>
+        <Indicate>Excluded</Indicate>
+        <WritableAuxiliaries>Excluded</WritableAuxiliaries>
+        <Broadcast>Excluded</Broadcast>
+        <ExtendedProperties>Excluded</ExtendedProperties>
+      </Properties>
+    </Characteristic>
+    <Characteristic
+      type="hiro99ma.characteristic.output"
+      name="output">
+      <Requirement>Mandatory</Requirement>
+      <Properties>
+        <Read>Mandatory</Read>
+        <Write>Excluded</Write>
+        <WriteWithoutResponse>Excluded</WriteWithoutResponse>
+        <SignedWrite>Excluded</SignedWrite>
+        <ReliableWrite>Excluded</ReliableWrite>
+        <Notify>Mandatory</Notify>
+        <Indicate>Excluded</Indicate>
+        <WritableAuxiliaries>Excluded</WritableAuxiliaries>
+        <Broadcast>Excluded</Broadcast>
+        <ExtendedProperties>Excluded</ExtendedProperties>
+      </Properties>
+    </Characteristic>
+  </Characteristics>
+</Service>

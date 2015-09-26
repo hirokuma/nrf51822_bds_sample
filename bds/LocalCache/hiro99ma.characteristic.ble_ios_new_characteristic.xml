@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Characteristic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/characteristic.xsd"
+  type="hiro99ma.characteristic.output"
+  uuid="50b8"
+  name="output">
+  <InformativeText>
+    <Abstract />
+    <InformativeDisclaimer />
+    <Summary />
+    <Examples>
+      <Example />
+    </Examples>
+  </InformativeText>
+</Characteristic>

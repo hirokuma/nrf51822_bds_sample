@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<BDSProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ble_ios" LastModified="2015-09-26T17:42:58.7148373+09:00">
+  <Namespace>hiro99ma.</Namespace>
+  <BaseGuid>70f2538c-6541-4321-936c-1addd7a8ccd7</BaseGuid>
+  <Profile Name="hiro99ma.profile.input_and_output" XMLFile="Profiles\hiro99ma.profile.input_and_output.xml" />
+  <ServiceFiles>
+    <Service UID="c7c37c3a-921b-4454-9122-bba28e41202a" XMLFile="Services\hiro99ma.service.ios.xml" UUIDMode="Full">
+      <CharacteristicFiles>
+        <Characteristic UID="fe771489-073e-4ba2-bb23-ef3710860ce8" XMLFile="Characteristics\hiro99ma.characteristic.input.xml" UUIDMode="Short" />
+        <Characteristic UID="a1c811e8-bf37-48d1-baa1-23ceb03399a7" XMLFile="Characteristics\hiro99ma.characteristic.output.xml" UUIDMode="Short" />
+      </CharacteristicFiles>
+    </Service>
+  </ServiceFiles>
+  <Workbench>
+    <Client Name="Virtual Client" />
+    <Peripheral Name="Virtual Server" />
+  </Workbench>
+  <SavePath>E:\Prog\BLE\nRF51_SDK_9.0.2-BDS_a190120\projects\ble_ios\bds\ble_ios.bds</SavePath>
+  <PublishData>
+    <Category />
+    <LastPublishDate>0</LastPublishDate>
+    <Annotations>true</Annotations>
+    <Emulation>true</Emulation>
+  </PublishData>
+</BDSProject>
